@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int a,b;
+    printf("Enter the number of days: \n ");
+    scanf("%d",&a);
+    int y=a/365;
+    int m=a/30;
+    printf("Years:%d \n ",y);
+     printf("Months:%d \n ",m);
+     printf("Days:%d \n ",(a-((y*365)+(m-(y*12))*30)));
+    return 0;
+}
