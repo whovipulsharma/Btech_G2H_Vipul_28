@@ -1,0 +1,31 @@
+#include <stdio.h> 
+#include <math.h> 
+int main()
+{
+    int a,b,c;
+printf("Enter a: ");
+scanf("%d",&a);
+printf("Enter b: ");
+scanf("%d",&b);
+printf("Enter c: ");
+scanf("%d",&c);
+int sq=(b*b)-(4*a*c);
+double d=0;
+
+if(sq>0)
+d=sqrt(sq);
+else
+d=sqrt(-sq);
+
+double x=(-b-d)/(2.0*a);
+double y=(-b+d)/(2.0*a);
+
+if(sq>0){
+printf("Root 1: %lf\n" , x);
+printf("Root 2: %lf" , y);
+}
+else{
+printf("Root 1:%lf+%lf i\n" ,((-b)/2.0*a),((d)/2.0*a));
+printf("Root 2: %lf-%lf i" ,((-b)/2.0*a),((d)/2.0*a));
+return 0;
+}}
