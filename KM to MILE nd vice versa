@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int a,b;
+    printf("Enter the distance in km: \n ");
+    scanf("%d",&a);
+    printf("Enter the distance in miles: \n ");
+    scanf("%d",&b);
+    float km=(b*8)/5.0;
+    float miles=(a*5)/8.0;
+    printf("Distance in km:%f \n ",km);
+    printf("Distance in miles:%f \n ",miles);
+    return 0;
+}
