@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int n,se=0,sd=0;
+    printf("Enter the limit: ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        if(i%2==0)
+        se+=i;
+        else
+        sd+=i;
+    }
+    printf("Sum of even number:%d\n",se);
+    printf("Sum of odd number:%d",sd);
+    return 0;
+}
