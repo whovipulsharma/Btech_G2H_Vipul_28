@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{   float a,b,c,d,e;
+    printf("Enter the marks score in five subject: \n");
+    scanf("%f%f%f%f%f",&a,&b,&c,&d,&e);
+    float p=((a+b+c+d+e)/500.0)*100;
+    char ch;
+    if(p>=90)
+    ch='A';
+    else if((p>=80)&&(p<90))
+    ch='B';
+    else if((p>=60)&&(p<80))
+    ch='C';
+    else
+    ch='D';
+    printf("Percentage scored:%.2ff\nGrade:%c",p,ch);
+}
