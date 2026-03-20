@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,t;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    printf("Enter the power: ");
+    scanf("%d",&t);
+    int p=1;
+  for(int i=1;i<=t;i++)
+  {
+      p*=n;
+  }
+   
+   printf("Power:%d",p);
+    return 0;
+}
