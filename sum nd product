@@ -1,0 +1,88 @@
+
+#include <stdio.h>
+
+int main() {
+    int r,c;
+    printf("Enter the no of rows: ");
+    scanf("%d",&r);
+    printf("Enter the no of columns: ");
+    scanf("%d",&c);
+   int a[r][c];
+   int b[r][c];
+   int s[r][c];
+   int p[r][c];
+   printf("Enter the elements in array 1:\n");
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          scanf("%d",&a[i][j]);
+      }
+       
+   }
+   printf("Array 1 :\n");
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          printf("%d ",a[i][j]);
+      }
+       printf("\n");
+   }
+    printf("Enter the elements in array 2:\n");
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          scanf("%d",&b[i][j]);
+      }
+       
+   }
+   printf("Array 2 :\n");
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          printf("%d ",b[i][j]);
+      }
+       printf("\n");
+   }
+    for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          s[i][j]=a[i][j]+b[i][j];
+      }
+   }
+    printf("sum :\n");
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          printf("%d ",s[i][j]);
+      }
+       printf("\n");
+   }
+   printf("Product :\n");
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          p[i][j]=0;
+          for(int k=0;k<c;k++)
+          {
+              p[i][j]+=a[i][k]*b[k][j];
+          }
+      }
+   }
+   for(int i=0;i<r;i++)
+   {
+      for(int j=0;j<c;j++)
+      {
+          printf("%d ",p[i][j]);
+      }
+       printf("\n");
+   }
+ 
+    return 0;
+}
