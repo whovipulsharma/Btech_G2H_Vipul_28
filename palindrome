@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,rev=0;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    int t=n;
+   while(n!=0)
+   {
+       int d=n%10;
+       rev=rev*10+d;
+       n/=10;
+   }
+   if(t==rev)
+   printf("Entered number is palindrome number:");
+   else
+   printf("Entered number is  not palindrome number:");
+    return 0;
+}
