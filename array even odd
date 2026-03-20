@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n=0,ne=0,nd=0;
+    printf("Enter the size of the matrix: ");
+    scanf("%d",&n);
+   int a[n];
+   printf("Enter the elements:\n");
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   printf("Entered Array:\n ");
+    for(int i=0;i<n;i++)
+   {
+       printf("%d ",a[i]);
+       if(a[i]%2==0)
+       ne++;
+       else
+       nd++;
+   }
+   printf("\nNo of even elements: %d\nNo of odd elements: %d",ne,nd);
+    return 0;
+}
