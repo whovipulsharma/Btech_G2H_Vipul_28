@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main() {
+    int n=0,x,y=-1;
+    printf("Enter the size of the matrix: ");
+    scanf("%d",&n);
+   int a[n];
+   printf("Enter the elements:\n");
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   printf("Enter the element to search: ");
+    scanf("%d",&x);
+    for(int i=0;i<n;i++)
+   {
+       if(x==a[i])
+       {y=i;
+        break;
+       }
+   }
+   if(y!=-1)
+   printf("Found element at %d ",y);
+   else
+   printf("Element not found");
+   
+    return 0;
+}
