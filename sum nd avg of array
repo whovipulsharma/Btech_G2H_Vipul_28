@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n=0,se=0;
+    
+    printf("Enter the size of the matrix: ");
+    scanf("%d",&n);
+    float d=n;
+   int a[n];
+   printf("Enter the elements:\n");
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   printf("Entered Array:\n ");
+    for(int i=0;i<n;i++)
+   {
+       printf("%d ",a[i]);
+       se+=a[i];
+   }
+   printf("\nSum of elements: %d\nAverage of elements: %f",se,se/d);
+    return 0;
+}
