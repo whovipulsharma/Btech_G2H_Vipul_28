@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char ch[20];
+    char cch[20];
+    printf("Enter the string: ");
+    scanf(" %s",ch);
+    for(int i=0;i<strlen(ch);i++)
+    {
+        cch[i]=ch[i];
+    }
+printf("original string: %s\n",ch);
+printf("Copy of string: %s",cch);
+    return 0;
+}
