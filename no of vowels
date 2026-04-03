@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+int main() {
+    char ch[20];
+    int f=0;
+    printf("Enter the string: ");
+    scanf(" %s",ch);
+    
+    for(int i=0;i<strlen(ch);i++)
+    {
+        char cch= toupper(ch[i]);
+        if(cch=='A'||cch=='E'||cch=='I'||cch=='O'||cch=='U')
+        f++;
+    }
+printf("No of vowels: %d",f);
+    return 0;
+}
