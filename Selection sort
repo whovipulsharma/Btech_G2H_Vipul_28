@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void sort(int a[])
+{
+    for(int i=0;i<4;i++)
+   {
+       int s=i;
+       for(int j=i+1;j<5;j++)
+       {
+           if(a[s]>a[j])
+           s=j;
+       }
+       int t=a[i];
+       a[i]=a[s];
+       a[s]=t;
+   }
+   
+}
+int main() {
+int a[]={7,8,3,1,2};
+sort(a);
+   for(int j=0;j<5;j++)
+       {
+           printf("%d ",a[j]);
+       }
+    return 0;
+}
